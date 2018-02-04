@@ -1,0 +1,849 @@
+html, body{
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding:0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainContent{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	width: 50%;
+	height: 100%;
+	padding-top: 8px;
+	padding-left: 20px; 
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+}
+
+.logoImg{
+	width: 51px; 
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logoText{
+	font-family: "HelveticaNeue";
+	font-size: 1.4em;
+	color: #9A9A9A; 
+	padding-left: 8px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.menu{
+	width: 50%;
+	height: 100%;
+	padding-left: 750px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.home{
+	width: 30.7px; 
+	height: 30.4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.chat{
+	width: 30.7px; 
+	height: 30.4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.notification{
+	width: 30.7px; 
+	height: 30.4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.notification button{
+	background-color: transparent; 
+}
+
+
+
+.menuBtn{
+	width: 30.7px; 
+	height: 30.4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menuBtn button{
+	width: 30.7px; 
+	height: 30.4px;
+	background-color: transparent;
+	border: none;
+	padding: 5px;
+
+}
+
+
+.content{
+	width: 100%;
+	height: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contenText{
+	width: 100%;
+	height: 10%;
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contentHeadText{
+	width: 100%;
+	height: 50%;
+	padding-left: 100px;
+	font-family: "HelveticaNeue";
+	color: #3ED1D7;
+	font-size: 1.3em;
+}
+
+.containerSubText{
+	width: 100%;
+	height: 50%;
+	padding-left: 100px;
+	font-family: "HelveticaNeue";
+	color: #BCBCBC;
+	font-size: 0.8em;
+	padding-top: 15px;
+}
+
+.infographics{
+	width: 100%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.infoMainContent{
+	width: 80%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.leftSection{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.leftSectionHead{
+	padding-right: 70px;
+	font-family:"HelveticaNeue";
+	font-size: 0.7em;
+	padding-bottom: 35px;
+
+}
+
+
+.leftSectionShape{
+	width: 50%;
+	height: 60%;
+	display: flex;
+	background-color: transparent;
+}
+
+
+.pieContainer {
+  height: 150px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.pieBackground {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+} 
+
+.pie {
+  transition: all 1s;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  clip: rect(0px, 75px, 150px, 0px);
+}
+
+.hold {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+#pieSlice1 .pie {
+  background-color: #C1C1C1;
+  transform:rotate(160deg);
+}
+
+#pieSlice2 {
+  transform: rotate(160deg);
+}
+
+#pieSlice2 .pie {
+  background-color: #66E5DD;
+  transform: rotate(20deg);
+}
+
+#pieSlice3 {
+  transform: rotate(180deg);
+}
+
+#pieSlice3 .pie {
+  background-color: #fc000c;
+  transform: rotate(60deg);
+}
+
+#pieSlice4 {
+  transform: rotate(220deg);
+}
+
+#pieSlice4 .pie {
+  background-color: #919191;
+  transform: rotate(140deg);
+}
+
+
+.innerCircle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 60px;
+  top: 35px;
+  left: 35px; 
+ 
+}
+
+
+
+
+.textbubble{
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	border-radius: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FDE7E8;
+	border: 1px solid #FDCBCF;
+	font-family: "HelveticaNeue";
+	font-size: 0.6em;
+	color: black;
+	position: relative;
+	left: 151px;
+	top: 60px;
+}
+
+.rightSection{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    right: 130px;
+    box-sizing: border-box;
+}
+
+
+.rightSectionHead{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	font-family:"HelveticaNeue";
+	font-size: 0.7em;
+}
+
+.secondSection{
+	padding-left: 20px;
+}
+
+.rightSectionBody{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	font-family:"HelveticaNeue";
+	font-size: 0.7em;
+	padding-left: 60px;
+
+}
+
+.square{
+	width: 10%;
+	height: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+.squareOne{
+	width: 30px;
+	height: 30px;
+	border-radius: 20%;
+	background-color: #C1C1C1;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.squareTwo{
+	width: 30px;
+	height: 30px;
+	border-radius: 20%;
+	border: 1px solid #66E5DD;
+	color: #C1C1C1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.squareThree{
+	width: 30px;
+	height: 30px;
+	border-radius: 20%;
+	border: 1px solid #F9BDC1;
+	color: #C1C1C1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.squareFour{
+	width: 30px;
+	height: 30px;
+	border-radius: 20%;
+	border: 1px solid #C4C1C1;
+	color: #C4C1C1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.status{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.squareOneStatus{
+	width: 100%;
+	height: 20%;
+	color: #C1C1C1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+.squareTwoStatus{
+	width: 100%;
+	height: 20%;
+	color: #C1C1C1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+.squareThreeStatus{
+	width: 100%;
+	height: 20%;
+	color: #C1C1C1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+.squareFourStatus{
+	width: 100%;
+	height: 20%;
+	color: #C1C1C1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+.number{
+	width:20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.squareOneNumber{
+	width: 100%;
+	height: 20%;
+	color: #C1C1C1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 20px;
+
+}
+
+.squareTwoNumber{
+	width: 100%;
+	height: 20%;
+	color: #C1C1C1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.squareThreeNumber{
+	width: 100%;
+	height: 20%;
+	color: #C1C1C1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.squareFourNumber{
+	width: 100%;
+	height: 20%;
+	color: #C1C1C1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 20px;
+}
+
+
+
+.customerData{
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.customerDataheader{
+	width: 80%;
+	height: 20%;
+	background-color: #374050;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	color: white;
+	font-family: "HelveticaNeue";
+	font-size: 0.8em;
+	font-weight: 100;
+
+
+}
+
+.customerId{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.emailId{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.phoneNumber{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.time{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.tableOne{
+	width: 80%;
+	height: 20%;
+	color:#989898;
+	font-family: "HelveticaNeue";
+	font-size: 0.8em;
+	font-weight: 100;
+
+	background-color:#F3F3F3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.nameOne{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mailOne{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.numberOne{
+	width: 20%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.timeOne{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.statusOne{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tableTwo{
+	width: 80%;
+	height: 20%;
+	color:#989898;
+	font-family: "HelveticaNeue";
+	font-size: 0.8em;
+	font-weight: 100;
+
+	background-color:#FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.nameTwo{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mailTwo{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.numberTwo{
+	width: 20%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.timeTwo{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.statusTwo{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tableThree{
+	width: 80%;
+	height: 20%;
+	color:#989898;
+	font-family: "HelveticaNeue";
+	font-size: 0.8em;
+	font-weight: 100;
+
+	background-color:#F3F3F3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.nameThree{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mailThree{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.numberThree{
+	width: 20%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.timeThree{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.statusThree{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tableFour{
+	width: 80%;
+	height: 20%;
+	color:#989898;
+	font-family: "HelveticaNeue";
+	font-size: 0.8em;
+	font-weight: 100;
+
+	background-color:#FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.nameFour{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mailFour{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.numberFour{
+	width: 20%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.timeFour{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.statusFour{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.senderBtn{
+	height: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button{
+	background-color: #00C69E;
+	color: white;
+	padding: 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border: none;
+	outline: none;
+	border-radius: 3%;
+	font-family: "HelveticaNeue";
+	font-size: 0.7em;
+
+}
+
+button:onhover{
+	cursor: pointer;
+}
+
+
+button:disabled{
+	background-color: gray;
+}
